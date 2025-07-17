@@ -54,6 +54,8 @@ echo created by marshverso(YT).
 pause
 exit /b
 
+
+REM ============================== FUNÇÕES DO CMD ==============================
 :verificarVersao
 set "versao=%~1"
 set "var=!%~2!"
@@ -91,3 +93,4 @@ for %%C in (!command!) do (
 echo.
 
 exit /b
+REM ============================================================
