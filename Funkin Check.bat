@@ -69,7 +69,7 @@ echo [Variables]
 for %%C in (!var!) do (
     findstr /C:"%%C" "%arquivo%" >nul
     if not errorlevel 1 (
-        echo "%%C" does not exist in this Psych Rngine ;-;.
+        echo "%%C" does not exist in this Psych Rngine ;-;
     )
 )
 echo.
@@ -78,7 +78,7 @@ echo [Functions]
 for %%C in (!function!) do (
     findstr /C:"%%C" "%arquivo%" >nul
     if not errorlevel 1 (
-        echo "%%C()" does not exist in this Psych Rngine ;-;.
+        echo "%%C()" does not exist in this Psych Rngine ;-;
     )
 )
 echo.
@@ -87,7 +87,7 @@ echo [Commands]
 for %%C in (!command!) do (
     findstr /C:"%%C" "%arquivo%" >nul
     if not errorlevel 1 (
-        echo "%%C()" does not exist in this Psych Rngine ;-;.
+        echo "%%C()" does not exist in this Psych Rngine ;-;
     )
 )
 echo.
