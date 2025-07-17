@@ -3,7 +3,7 @@ setlocal enabledelayedexpansion
 
 REM modo para burro
 if "%~1"=="" (
-    echo Drag the script over .bat
+    echo ❏ Drag the script on top of it ❏
     pause
 )
 
@@ -60,32 +60,32 @@ set "var=!%~2!"
 set "function=!%~3!"
 set "command=!%~4!"
 
-echo ---Psych Engine %versao%---
+echo === Psych Engine %versao% ===
 echo.
 
-echo =Variables=
+echo [Variables]
 for %%C in (!var!) do (
     findstr /C:"%%C" "%arquivo%" >nul
     if not errorlevel 1 (
-        echo WARNING: The variable "%%C" does not exist in this Psych Rngine.
+        echo "%%C" does not exist in this Psych Rngine ;-;.
     )
 )
 echo.
 
-echo =Functions=
+echo [Functions]
 for %%C in (!function!) do (
     findstr /C:"%%C" "%arquivo%" >nul
     if not errorlevel 1 (
-        echo WARNING: The function "%%C()" does not exist in this Psych Rngine.
+        echo "%%C()" does not exist in this Psych Rngine ;-;.
     )
 )
 echo.
 
-echo =Commands=
+echo [Commands]
 for %%C in (!command!) do (
     findstr /C:"%%C" "%arquivo%" >nul
     if not errorlevel 1 (
-        echo WARNING: The command "%%C()" does not exist in this Psych Rngine.
+        echo "%%C()" does not exist in this Psych Rngine ;-;.
     )
 )
 echo.
